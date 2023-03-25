@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/tvNamaToko"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Toko"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+            <Spinner
+                android:id="@+id/spin_toko"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/edt_kode_dbarangs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:backgroundTint="@color/cardview_dark_background"
+                        android:hint="Kode Barang"
+                        android:textColorHint="@color/abu"
+                        android:maxLength="50"
+                        android:layout_weight="5"
+                        android:singleLine="true"
+                        android:inputType="number" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <ImageButton
+                        android:id="@+id/btn_barcodeInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_barcode"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/abu">>
+                <EditText
+                    android:id="@+id/edt_nama_dbarangs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:backgroundTint="@color/cardview_dark_background"
+                    android:hint="Nama Barang"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/img_photo_barang"
+                android:layout_width="240dp"
+                android:layout_height="144dp"
+                android:src="@drawable/ic_picture"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="#000"
+                android:layout_marginBottom="6dp"
+                android:text="Foto Barang"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/abu">
+
+                <EditText
+                    android:id="@+id/edt_stock_dbarangs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cardview_dark_background"
+                    android:hint="Stok"
+                    android:inputType="number"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:textColor="#000" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/abu">
+                <EditText
+                    android:id="@+id/edt_hd_dbarangs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:backgroundTint="@color/cardview_dark_background"
+                    android:hint="Harga dasar"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/abu">
+                <EditText
+                    android:id="@+id/edt_hj_dbarangs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:backgroundTint="@color/cardview_dark_background"
+                    android:hint="Harga jual"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/abu">
+                <EditText
+                    android:id="@+id/edt_ket_dbarangs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:backgroundTint="@color/cardview_dark_background"
+                    android:hint="Keterangan"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:inputType="text"/>
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/btn_simpan_dbarangs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="10dp"
+                android:text="Simpan"/>
+            <!--<Button-->
+                <!--android:id="@+id/btn_delete_dbarangs"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@color/colorPrimary"-->
+                <!--android:text="Delete"/>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

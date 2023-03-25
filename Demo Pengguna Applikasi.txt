@@ -1,0 +1,13 @@
+Akun demo pengguna :
+
+Distributor
+username : admin
+password : admin
+
+Toko
+username : toko
+password : toko
+
+Karyawan
+username : karyawan
+password : karyawan

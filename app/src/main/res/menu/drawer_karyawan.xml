@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Main">
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_homekaryawan"
+                android:icon="@drawable/ic_beranda"
+                android:title="Home" />
+            <item
+                android:id="@+id/nav_profilkaryawan"
+                android:icon="@drawable/ic_akun"
+                android:title="Profil" />
+            <item
+                android:id="@+id/nav_barangkaryawantoko"
+                android:icon="@drawable/ic_barang"
+                android:title="Barang" />
+            <item
+                android:id="@+id/nav_transaksikaryawantoko"
+                android:icon="@drawable/ic_transaksi"
+                android:title="Transaksi" />
+            <item
+                android:id="@+id/nav_penjualankaryawantoko"
+                android:icon="@drawable/ic_tanggungan"
+                android:title="Data Transaksi" />
+        </group>
+    </item>
+
+    <item android:title="Sistem">
+        <menu>
+            <item
+                android:id="@+id/nav_tentang"
+                android:icon="@drawable/ic_info"
+                android:title="Tentang" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+</menu>

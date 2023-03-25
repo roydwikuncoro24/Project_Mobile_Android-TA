@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sort_harip"
+        android:title="Sort hari ini"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/sort_bulanp"
+        android:title="Sort bulan ini"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/sort_tahunp"
+        android:title="Sort tahun ini"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menuRecTrans"
+        android:title="Transaksi"
+        android:icon="@drawable/ic_add_pesanan"
+        app:showAsAction="always" />
+</menu>

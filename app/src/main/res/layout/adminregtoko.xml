@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_gradient"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/noimage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_admin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/app_name"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/txtRegisterUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded"
+                android:hint="Username"
+                android:layout_marginTop="5dp"
+                android:maxLength="50"
+                android:textColorHighlight="@color/colorAccent"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lgrey"
+                android:inputType="textPersonName"
+                android:padding="14dp" />
+
+            <EditText
+                android:id="@+id/txtRegisterNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded"
+                android:hint="Nama Toko"
+                android:layout_marginTop="5dp"
+                android:maxLength="50"
+                android:textColorHighlight="@color/colorAccent"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lgrey"
+                android:inputType="textPersonName"
+                android:padding="14dp" />
+
+            <EditText
+                android:id="@+id/txtRegisterNamaPem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded"
+                android:hint="Nama Pemilik"
+                android:layout_marginTop="5dp"
+                android:maxLength="50"
+                android:textColorHighlight="@color/colorAccent"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lgrey"
+                android:inputType="textPersonName"
+                android:padding="14dp" />
+
+            <EditText
+                android:id="@+id/txtRegisterMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded"
+                android:hint="Email"
+                android:layout_marginTop="5dp"
+                android:maxLength="50"
+                android:textColorHighlight="@color/colorAccent"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lgrey"
+                android:inputType="textEmailAddress"
+                android:padding="14dp" />
+
+            <EditText
+                android:id="@+id/txtRegisterAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded"
+                android:hint="Alamat"
+                android:layout_marginTop="5dp"
+                android:maxLength="50"
+                android:textColorHighlight="@color/colorAccent"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lgrey"
+                android:inputType="textPersonName"
+                android:padding="14dp" />
+
+            <EditText
+                android:id="@+id/txtRegisterTelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded"
+                android:hint="No. Telepon"
+                android:layout_marginTop="5dp"
+                android:textColorHighlight="@color/colorAccent"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lgrey"
+                android:inputType="phone"
+                android:maxLength="15"
+                android:padding="14dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                app:passwordToggleEnabled="true"
+                app:hintEnabled="false"
+                android:layout_marginTop="5dp"
+                app:passwordToggleTint="@color/white"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txtRegisterPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded"
+                    android:textColorHighlight="@color/colorAccent"
+                    android:hint="Kata sandi"
+                    android:textColorHint="@color/lgrey"
+                    android:textColor="@color/white"
+                    android:inputType="textPassword"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                app:passwordToggleEnabled="true"
+                app:hintEnabled="false"
+                android:layout_marginTop="5dp"
+                app:passwordToggleTint="@color/white"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txtRegisterUlangi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded"
+                    android:textColorHighlight="@color/colorAccent"
+                    android:hint="Ulangi kata sandi"
+                    android:textColorHint="@color/lgrey"
+                    android:textColor="@color/white"
+                    android:inputType="textPassword"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnDaftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_error"
+                android:text="Tambah"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
